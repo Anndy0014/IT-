@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style type="text/css">
+    /*layer*/
+    * {
+        background-color: #dd8c95;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    body {
+        color: #f0efef;
+        font-family: Helvetica, sans-serif;
+        font-size: 17px;
+
+    }
+
+    /* Grid*/
+    .form {
+        margin: 4% 2%;
+        display: grid;
+        height: 100%;
+        grid-template-areas: "row1 row2 row2"
+            "row1 row3 row3"
+            "row1 row9 row9"
+            "row1 row4 row5"
+            "row1 row6 row7"
+            "row1 row8 row8";
+        grid-template-rows: 10% 10% 10% 30% 30% 7%;
+        grid-template-columns: 40% 30% 30%;
+    }
+
+    .form .row1 {
+        grid-area: row1;
+    }
+
+    .form .row2 {
+        grid-area: row2;
+    }
+
+    .form .row3 {
+        grid-area: row3;
+    }
+
+    .form .row4 {
+        grid-area: row4;
+    }
+
+    .form .row5 {
+        grid-area: row5;
+    }
+
+    .form .row6 {
+        grid-area: row6;
+    }
+
+    .form .row7 {
+        grid-area: row7;
+    }
+
+    .form .row8 {
+        grid-area: row8;
+    }
+
+    .form .row9 {
+        grid-area: row9;
+    }
+
+    /*contact*/
+    .form .row8 .follow ul {
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .form .row8 .follow li {
+        display: inline;
+    }
+
+    .form .row8 .follow li a {
+        color: #f0efef;
+        display: inline-block;
+
+        opacity: 1;
+        text-align: left;
+        transition: 0.3s all;
+        width: 50px;
+    }
+
+    /*font*/
+    .form .row1 .image {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .form .row2 h2 {
+        color: #f0efef;
+        font-size: 36px;
+        margin-bottom: 42px;
+        position: relative;
+    }
+
+    /* Line cho h2 */
+    .form .row2 h2:after {
+        background-color: #f0efef;
+        bottom: -6px;
+        content: "";
+        display: block;
+        left: 0;
+        height: 3px;
+        width: 70px;
+        position: absolute;
+    }
+
+    .about-us .detail .info-text {
+        margin-bottom: 22px;
+    }
+
+    .form h3 {
+        color: #f0efef;
+        font-size: 24px;
+    }
+
+    .form .Hobbies a,
+    .form .Aboutme a {
+        font-size: 26px;
+        color: #f0efef;
+        text-decoration: none;
+        transition: 0, 3s color;
+    }
+
+    .form .Hobbies a:hover,
+    .form .Aboutme a:hover {
+        color: #999;
+    }
+
+    .form .row4 h3,
+    .form .row5 h3,
+    .form .row6 h3,
+    .form .row7 h3 {
+        color: #f0efef;
+        font-size: 30px;
+        margin-bottom: 42px;
+        position: relative;
+    }
+
+    /* Line cho h2 */
+    .form .row4 h3:after,
+    .form .row5 h3:after,
+    .form .row6 h3:after,
+    .form .row7 h3:after {
+        background-color: #f0efef;
+        bottom: -6px;
+        content: "";
+        left: 0;
+        height: 2px;
+        width: 80%;
+        position: absolute;
+    }
+
+    .skill {
+        width: 150px;
+        background-color: #f0efef;
+        border-radius: 16px;
+    }
+
+    .progress {
+        padding: 0, 1em 16px;
+        border-radius: 16px;
+        text-align: center;
+        color: #5f69b1;
+        background-color: #E8ACEA;
+
+    }
+    </style>
+</head>
+
+<body>
+    <section class="form">
+        <div class="row1">
+            <div class="image">
+                <img src="images/heo01.png" width="100%" alt="">
+            </div>
+        </div>
+        <div class="row2">
+            <h2>Trinh Quang Anh</h2>
+        </div>
+        <div class="row3">
+            <h3 class="Aboutme"><a href="About.html">About Me</a></h3>
+        </div>
+        <div class="row5">
+            <h3 class="Experience">Experiences</h3>
+            <ul class="choose-list">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <li><i class="fab fa-java"></i>Java</li>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="progress" style="width: 15%">15%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><i class="fab fa-html5"></i>Html</li>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="progress" style="width: 80%">80%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><i class="fab fa-css3-alt"></i>Css-Sass</li>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="progress" style="width: 30%">30%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><i class="fab fa-js-square"></i>javaScript</li>
+                        </td>
+                        <td>
+                            <div class="skill">
+                                <div class="progress" style="width: 10%">10%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+        </div>
+        <div class="row4">
+            <h3 class="Contact">Contact</h3>
+            <ul class="choose-list">
+                <table>
+                    <tr>
+                        <td>
+                            <li><i class="far fa-address-card"></i>Adress </li>
+                        </td>
+                        <td>
+                            :福岡市中央区
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><i class="far fa-envelope"></i>mail</li>
+                        </td>
+                        <td>
+                            :B16013@nishitan.jp
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><i class="fas fa-mobile"></i>Phone</li>
+                        </td>
+                        <td>
+                            :09097909018
+                        </td>
+                    </tr>
+                    　
+                </table>
+        </div>
+        <div class="row6">
+            <h3 class="Education">Education</h3>
+            <ul>
+                <li><i class="fas fa-graduation-cap"></i>西日本短期大学：卒業</li>
+                <li><i class="fas fa-graduation-cap"></i>国際アニメーション専門学校<br>アニメ文化コース：卒業</li>
+                <li><i class="fas fa-graduation-cap"></i>国際アニメーション専門学校<br> ITエンジニア学科：末</li>
+            </ul>
+        </div>
+        <div class="row7">
+            <h3 class="koto">好きなことわさ：「石の上にも3年」</h3>
+            <p> 石の上にも三年とは
+                忍耐強く頑張っていれば、
+                いつかは報われていく、という意味です。
+                石の上に座ると最初は冷たいですが、
+                ずっと座りつづけると、自分の体温であたたまり
+                そのうち石そのものがあたたかく感じるようになる、
+                ということです</p>
+        </div>
+        <div class="row8">
+            <ul class="follow">
+                <li class="facebook"><a href="https://www.facebook.com/Kuan.1407/?viewas=100000686899395"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="instagra,"><a href="https://www.instagram.com/chinked_eyes07/"><i class="fab fa-instagram"></i></a></li>
+                <li class="line"><a href="line.jpg"><i class="fab fa-line"></i></a></li>
+            </ul>
+        </div>
+        <div class="row9">
+            <h3 class="Hobbies"><a href="Hobbies.html">Hobbies</a></h3>
+        </div>
+    </section>
+</body>
+
+</html>

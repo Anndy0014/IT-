@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hobbies</title>
+<style type="text/css">
+  .form {margin: 2% 2%;
+  display: grid;
+ 
+ 
+  grid-template-areas: "row1 row1 row1"
+                       "row2 row3 row4"
+                       "row5 row6 row7" ;                      
+  grid-template-rows: 45% 40% 40%;
+  grid-template-columns: 33% 33% 33%;                     
+}
+.form .row1{
+  grid-area: row1;
+  background-color: #f6f6f6;
+}
+.form .row2{
+  grid-area: row2;
+  background-color: #f6f6f6;
+}
+.form .row3{
+  grid-area: row3;
+  background-color: #f6f6f6;
+}
+.form .row4{
+  grid-area: row4;
+  background-color: #f6f6f6;
+}
+.form .row5{
+  grid-area: row5;
+   background-color: #f6f6f6;
+}
+.form .row6{
+  grid-area: row6;
+  background-color: #f6f6f6;
+}
+.form .row7{
+  grid-area: row7;
+    background-color: #f6f6f6;
+}
+/*layout*/
+.form h2 {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 99px;
+    position: relative;
+    text-align: center;
+  }
+  /* Line cho h2 */
+  .form h2:after {
+    background-color: #8B6130;
+    bottom: -5px;
+    content: "";
+    display: block;
+    left: 47%;
+    height: 4px;
+    width: 60px;
+    position: absolute;
+  }
+  .form.row2,
+  .form.row3,
+  .form.row4,
+  .form.row5,
+  .form.row6,
+  .form.row7
+  {
+    color: #7c7c7c;
+    float: left;
+    line-height: 1.35;
+   
+    position: relative;
+    
+  }
+  
+  .form .row2 .avatar, 
+  .form .row3 .avatar, 
+  .form .row4 .avatar, 
+  .form .row5 .avatar, 
+  .form .row6 .avatar, 
+  .form .row7 .avatar 
+  {
+    float: left;
+    width: 40%;
+    position: absolute;
+    padding-left: 20px;
+  }
+  .form .row2 .avatar img ,
+  .form .row3 .avatar img ,
+  .form .row4 .avatar img ,
+  .form .row5 .avatar img ,
+  .form .row6 .avatar img ,
+  .form .row7 .avatar img
+  {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  .form .row2 .message ,
+  .form .row3 .message ,
+  .form .row4 .message ,
+  .form .row5 .message ,
+  .form .row6 .message ,
+  .form .row7 .message
+  {
+    float: right;
+    width: 60%;
+    padding-left: 80px;
+  }
+  .form .row2 .message .detail, 
+  .form .row3 .message .detail, 
+  .form .row4 .message .detail, 
+  .form .row5 .message .detail, 
+  .form .row6 .message .detail, 
+  .form .row7 .message .detail
+  {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .form .row2 .message .name ,
+  .form .row3 .message .name ,
+  .form .row4 .message .name ,
+  .form .row5 .message .name ,
+  .form .row6 .message .name ,
+  .form .row7 .message .name
+  {
+    font-weight: 600;
+  }
+  .form .row1 a{
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <section class="form">
+    <div class="row1"><h2><a href="Home.html">アン</a>  の趣味</h2></div>
+    <div class="row2">
+      <p class="avatar">
+        <img src="Images/Game.JPG" width="150px" alt=""></p>
+        <div class="message">
+          <p class="name">ゲーム</p>
+          <p class="detail">&quot;世界の同じゲームを楽しんでいる人と、仲間になったり、対戦したりと、バラエティにもとんでいるようです。&quot;</p>
+          
+        </div>
+        </div>
+    <div class="row3">
+      <p class="avatar">
+      <img src="Images/Travel.JPG" width="150px" alt=""></p>
+        <div class="message">
+          <p class="name">旅行</p>
+          <p class="detail">&quot;私、「旅は恋愛であり、恋愛は旅である」。旅は出会いと別れを繰り返し、次なる地へ進む恋愛に似ている&quot;</p>
+          
+        </div>
+      </div>
+    <div class="row4">
+      <p class="avatar">
+        <img src="Images/Camera.JPG" width="150px" alt=""></p>
+        <div class="message">
+          <p class="name">カメラ</p>
+          <p class="detail">&quot;自分の感覚を大切にしているというものもあります。大切な自分の感覚を表現できるために必須なのがカメラ。&quot;</p>
+          
+        </div>
+      </div>
+    <div class="row5">
+      <p class="avatar">
+        <img src="Images/Book.JPG" width="150px" alt=""></p>
+        <div class="message">
+          <p class="name">本</p>
+          <p class="detail">&quot;私は読書が好きです。
+どれくらい好きかというと、小学生の時、毎年学年、学校の読書賞（たくさん読んだ、借りた）はとりあえずもらっていたし、それは中学校、そして高校生になるまで続きました&quot;</p>
+          
+        </div>
+      </div>
+    <div class="row6">
+      <p class="avatar">
+        <img src="Images/Cafe.JPG" width="150px" alt=""></p>
+        <div class="message">
+          <p class="name">コーヒー</p>
+          <p class="detail">&quot;その豊かな香りや気分が安らぐ温かさ、いれたてのコーヒーを入れたカップを手に腰を下ろす習慣がもたらす感覚などから、コーヒーを飲むことが複雑でニュアンスに富んだ経験であることを知っている。&quot;</p>
+          
+        </div>
+      </div>
+    <div class="row7">
+      <p class="avatar">
+        <img src="Images/Music.JPG" width="150px" alt=""></p>
+        <div class="message">
+          <p class="name">音楽</p>
+          <p class="detail">&quot;音楽は私の生活の中で大きな役割を担っていて、気がつかない間に、カラダや脳はさまざまな反応を見せているようなのです。&quot;</p>
+          
+        </div>
+      </div>
+    
+  </section>
+</body>
+</html>
